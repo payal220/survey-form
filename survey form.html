@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+    <title>SURVEY FORM</title>
+    <link rel='stylesheet' href='styles.css'/>
+
+    </head>
+    <body>
+      <h1 id='title'>Survey form</h1>
+      <p id="description">fill this form to help us in survey</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id='name-label'>Name<input id='name' type='text'placeholder='enter your name'class='inline'  required></input></label>
+          <label id='email-label'>Email<input id='email'type='email' placeholder='enter your email' class='inline' required></input></label>
+          <label id='number-label'>Number<input id='number'type='number'min='10' max='12' placeholder='enter you number.' class='inlne'></input> </label>
+          </fieldset>
+          <fieldset>
+            <label>Which game do you play?</label>
+            <select id='dropdown'>
+              <option value=''>select option</option>
+              <option value='1'>indoor</option>
+              <option value='2'>outdoor</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend> which is your favorite sports? </legend>
+            <label>Badminton<input type="checkbox" value='1'></input></label>
+            <label>circket<input type="checkbox" value='2'></input>
+            <label>Chess<input type="checkbox" value='3'></input>
+            <label>Table tennis<input type="checkbox" value="3"></input>
+            
+          </fieldset>
+          <fieldset>
+            <legend>Would you recommand our sports camp?</legend>
+            <label for='definately'><input id='definately'type='radio' value='1'name='recommand' class='inline'checked/>Definately yes</label>
+            <label for='maybe'><input id='maybe'type='radio'name='recommand'value='2'class='inline'/> maybe</label>
+            <label for='no'><input id='no'type='radio'name='recommand' class='inline' value='3'/>No</label>
+            <label for='comment'>write a comment:
+              <textarea id='comment' rows='4' cols='30' placeholder='write comment...' ></textarea>
+           </fieldset>
+           <input  id='submit'type="submit"value='submit'/>
+
+        
+        </form>
+    </body>
+</html>
